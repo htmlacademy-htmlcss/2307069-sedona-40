@@ -2,7 +2,7 @@
 
 * Студент: [Анастасия Шахова](https://up.htmlacademy.ru/htmlcss/40/user/2307069).
 * Наставник: [Олег Зайцев](https://htmlacademy.ru/profile/ozi).
-
+* Сайт: [Мой проект Седона](https://nastyashakhova.github.io/2307069-sedona-40/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
