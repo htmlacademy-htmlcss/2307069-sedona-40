@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы Седоны</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
     <div class="wrapper">
+
+    <!-- Шапка -->
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -42,6 +45,7 @@
 
     <main class="main-catalog" data-test="main">
       <div class="catalog-background">
+        <!-- Шапка каталога -->
         <header class="catalog-header">
           <h1 class="catalog-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -56,6 +60,8 @@
 
         <section class="catalog-hotels" data-test="filter">
           <h2 class="visually-hidden">Выбор критериев отеля</h2>
+
+          <!-- Фильтрация -->
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -117,14 +123,15 @@
                 </label>
             </fieldset>
             <button class="button filter-button" type="submit">Применить</button>
-            <button class="button filter-button" type="reset">Сбросить</button>
+            <button class="button filter-button filter-button-reset" type="reset">Сбросить</button>
           </form>
         </section>
       </div>
 
+      <!-- Сортировка -->
       <section class="main-catalog" data-test="catalog">
         <header class="catalog-header">
-          <h2>Найдено гостиниц: <span>38</span></h2>
+          <h2 class="catalog-header-title">Найдено гостиниц: <span>38</span></h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
             <option value="popular">Сначала популярные</option>
@@ -149,6 +156,7 @@
           </ul>
         </header>
 
+        <!-- Список гостиниц -->
         <ul class="catalog-list">
           <li class="catalog-card">
             <a class="catalog-card-link" href="#">
@@ -157,8 +165,8 @@
             </a>
             <p class="hotel-type">Гостиница</p>
             <p class="hotel-price">От <span>4000 ₽</span></p>
-            <a class="more" href="#">ПОДРОБНЕЕ</a>
-            <button class="favourites" type="button" name="button">В ИЗБРАННОЕ</button>
+            <a class="header-button" href="#">Подробнее</a>
+            <button class="button filter-button" type="button" name="button">В избранное</button>
             <img src="#" class="hotel-stars" alt="Оценка гостиницы в звёздах">
             <p class="rating">Рейтинг: <span>8,5</span></p>
           </li>
@@ -169,8 +177,8 @@
             </a>
             <p class="hotel-type">Гостиница</p>
             <p class="hotel-price">От <span>5000 ₽</span></p>
-            <a class="more" href="#">ПОДРОБНЕЕ</a>
-            <button class="favourites" type="button" name="button">В ИЗБРАННОЕ</button>
+            <a class="header-button" href="#">Подробнее</a>
+            <button class="button favourites-button" type="button" name="button">В избранном</button>
             <img src="#" class="hotel-stars" alt="Оценка гостиницы в звёздах">
             <p class="rating">Рейтинг: <span>9,2</span></p>
           </li>
@@ -181,8 +189,8 @@
             </a>
             <p class="hotel-type">Гостиница</p>
             <p class="hotel-price">От <span>2500 ₽</span></p>
-            <a class="more" href="#">ПОДРОБНЕЕ</a>
-            <button class="favourites" type="button" name="button">В ИЗБРАННОЕ</button>
+            <a class="header-button" href="#">Подробнее</a>
+            <button class="button filter-button" type="button" name="button">В избранное</button>
             <img src="#" class="hotel-stars" alt="Оценка гостиницы в звёздах">
             <p class="rating">Рейтинг: <span>6,9</span></p>
           </li>
@@ -193,14 +201,15 @@
             </a>
             <p class="hotel-type">Гостиница</p>
             <p class="hotel-price">От <span>1500 ₽</span></p>
-            <a class="more" href="#">ПОДРОБНЕЕ</a>
-            <button class="favourites" type="button" name="button">В ИЗБРАННОЕ</button>
+            <a class="header-button" href="#">Подробнее</a>
+            <button class="button filter-button" type="button" name="button">В избранное</button>
             <img src="#" class="hotel-stars" alt="Оценка гостиницы в звёздах">
             <p class="rating">Рейтинг: <span>5,0</span></p>
           </li>
         </ul>
 
-        <ul class="pagination">
+        <!-- Пагинация -->
+        <ul class="pagination-list">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
@@ -222,13 +231,13 @@
         </ul>
       </section>
 
+      <!-- Подписка на рассылку -->
       <section class="newsletter" data-test="subscribe">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email" class="visually-hidden">Введите Ваш e-mail</label>
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email"
-            id="newsletter-email" required>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">
             <span>Подписаться</span>
           </button>
@@ -236,7 +245,10 @@
       </section>
     </main>
 
+    <!-- Подвал -->
     <footer class="page-footer" data-test="footer">
+
+      <!-- Социальные сети -->
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
@@ -258,6 +270,7 @@
         </ul>
       </section>
 
+      <!-- Контакты -->
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <address class="footer-contacts-address">
@@ -265,6 +278,7 @@
         </address>
       </section>
 
+      <!-- Разработчик -->
       <section class="developer">
         <h2 class="visually-hidden">Разработчик данного сайта</h2>
         <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" rel="noreferrer noopener">
