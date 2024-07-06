@@ -48,7 +48,7 @@
     <main class="main-catalog" data-test="main">
       <div class="catalog-background">
         <!-- Шапка каталога -->
-        <header class="catalog-header">
+        <header class="catalog-filter-header">
           <h1 class="catalog-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -117,18 +117,20 @@
             </fieldset>
 
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Стоимость, <span>₽:</span></legend>
-                <label class="control">
-                  от
-                  <input class="control-input" placeholder="0" type="number" name="price">
+              <legend class="catalog-filter-title filter-cost">Стоимость, <span>₽:</span></legend>
+                <label class="control-cost">
+                  <input class="control-input-cost left-cost" placeholder="0" type="number" name="price">
+                  <span>от</span>
                 </label>
-                <label class="control">
-                  до
-                  <input class="control-input" placeholder="9000" type="number" name="price">
+                <label class="control-cost">
+                  <input class="control-input-cost right-cost" placeholder="9000" type="number" name="price">
+                  <span>до</span>
                 </label>
             </fieldset>
-            <button class="button filter-button" type="submit">Применить</button>
-            <button class="button filter-button filter-button-reset" type="reset">Сбросить</button>
+            <div class="catalog-filter-group-buttons">
+              <button class="button filter-button-apply" type="submit">Применить</button>
+              <button class="button filter-button-reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
       </div>
@@ -145,8 +147,8 @@
           <ul class="catalog-header-list">
             <li class="catalog-header-item">
               <a class="button-show-tile" href="catalog.html?view=tile">
-                <span class="visually-hidden">Показать таблицей</span>
               </a>
+              <span class="visually-hidden">Показать таблицей</span>
             </li>
             <li class="catalog-header-item">
               <a class="button-show-card" href="catalog.html?view=card">
@@ -168,11 +170,15 @@
               <img class="catalog-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Ущелье с видом на звёзды">
               <h3 class="catalog-card-title">Amara Resort & Spa</h3>
             </a>
-            <p class="hotel-type">Гостиница</p>
-            <p class="hotel-price">От <span>4000 ₽</span></p>
-            <a class="button button-more" href="#">Подробнее</a>
-            <button class="button button-add" type="button" name="button">В избранное</button>
-            <div class="hotel-stars">
+            <div class="catalog-card-block">
+              <p class="hotel-type">Гостиница</p>
+              <p class="hotel-price">От <span>4000 ₽</span></p>
+            </div>
+            <div class="catalog-card-block">
+              <a class="button button-more" href="#">Подробнее</a>
+              <button class="button button-add" type="button" name="button">В избранное</button>
+            </div>
+            <div class="catalog-card-block">
               <span class="visually-hidden">4 звезды</span>
               <ul class="hotel-stars-list" aria-hidden="true">
                 <li class="hotel-star-item"></li>
@@ -188,11 +194,15 @@
               <img class="catalog-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Гора с радугой">
               <h3 class="catalog-card-title">Villas at Poco Diablo</h3>
             </a>
-            <p class="hotel-type">Гостиница</p>
-            <p class="hotel-price">От <span>5000 ₽</span></p>
-            <a class="button button-more" href="#">Подробнее</a>
-            <button class="button favourites-button" type="button" name="button">В избранном</button>
-            <div class="hotel-stars">
+            <div class="catalog-card-block">
+              <p class="hotel-type">Гостиница</p>
+              <p class="hotel-price">От <span>5000 ₽</span></p>
+            </div>
+            <div class="catalog-card-block">
+              <a class="button button-more" href="#">Подробнее</a>
+              <button class="button favourites-button" type="button" name="button">В избранном</button>
+            </div>
+            <div class="catalog-card-block">
               <span class="visually-hidden">4 звезды</span>
               <ul class="hotel-stars-list" aria-hidden="true">
                 <li class="hotel-star-item"></li>
@@ -208,11 +218,15 @@
               <img class="catalog-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Гора в пустыне">
               <h3 class="catalog-card-title">Desert Quail Inn</h3>
             </a>
-            <p class="hotel-type">Гостиница</p>
-            <p class="hotel-price">От <span>2500 ₽</span></p>
-            <a class="button button-more" href="#">Подробнее</a>
-            <button class="button button-add" type="button" name="button">В избранное</button>
-            <div class="hotel-stars">
+            <div class="catalog-card-block">
+              <p class="hotel-type">Гостиница</p>
+              <p class="hotel-price">От <span>2500 ₽</span></p>
+            </div>
+            <div class="catalog-card-block">
+              <a class="button button-more" href="#">Подробнее</a>
+              <button class="button button-add" type="button" name="button">В избранное</button>
+            </div>
+            <div class="catalog-card-block">
               <span class="visually-hidden">3 звезды</span>
               <ul class="hotel-stars-list" aria-hidden="true">
                 <li class="hotel-star-item"></li>
@@ -227,11 +241,15 @@
               <img class="catalog-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="Гора на фоне звёздного неба">
               <h3 class="catalog-card-title">GreenTree Inn</h3>
             </a>
-            <p class="hotel-type">Гостиница</p>
-            <p class="hotel-price">От <span>1500 ₽</span></p>
-            <a class="button button-more" href="#">Подробнее</a>
-            <button class="button button-add" type="button" name="button">В избранное</button>
-            <div class="hotel-stars">
+            <div class="catalog-card-block">
+              <p class="hotel-type">Гостиница</p>
+              <p class="hotel-price">От <span>1500 ₽</span></p>
+            </div>
+            <div class="catalog-card-block">
+              <a class="button button-more" href="#">Подробнее</a>
+              <button class="button button-add" type="button" name="button">В избранное</button>
+            </div>
+            <div class="catalog-card-block">
               <span class="visually-hidden">2 звезды</span>
               <ul class="hotel-stars-list" aria-hidden="true">
                 <li class="hotel-star-item"></li>
@@ -273,8 +291,8 @@
         </div>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email" class="visually-hidden">Введите Ваш e-mail</label>
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">
+          <input class="newsletter-field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="newsletter-button" type="submit">
             <span>Подписаться</span>
           </button>
         </form>
