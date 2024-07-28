@@ -27,36 +27,36 @@ html {
 
 /*Все цвета*/
 :root {
-  --color-white: rgb(255, 255, 255);
+  --color-white: #ffffff;
   --color-white-transparent: rgba(255, 255, 255, 0.3);
   --color-white-breadcrumbs: rgba(255, 255, 255, 0.6);
   --color-modal-overlay: rgba(242, 242, 242, 0.8);
-  --color-red: rgb(255, 87, 87);
-  --color-black: rgb(0, 0, 0);
+  --color-red: #ff5757;
+  --color-black: #000000;
   --color-modal-shadow: rgba(0, 0, 0, 0.15);
   --color-select-disabled: rgba(0, 0, 0, 0.3);
   --color-shadow: rgba(0, 0, 0, 0.2);
   --color-shadow-range: rgba(0, 0, 0, 0.25);
   --color-shadow-range-active: rgba(0, 0, 0, 0.4);
-  --color-brown: rgb(117, 97, 87);
-  --color-brown-current: rgb(117, 98, 87);
-  --color-dark-brown-button: rgb(97, 80, 72);
+  --color-brown: #756157;
+  --color-brown-current: #756257;
+  --color-dark-brown-button: #615048;
   --color-brown-transparent: rgba(117, 97, 87, 0.3);
-  --color-dark-brown-text: rgb(51, 51, 51);
-  --color-light-grey-background: rgb(242, 242, 242);
-  --color-blue: rgb(130, 179, 211);
-  --color-blue-icon: rgb(131, 179, 211);
-  --color-dark-blue-icon: rgb(104, 162, 202);
+  --color-dark-brown-text: #333333;
+  --color-light-grey-background: #f2f2f2;
+  --color-blue: #82b3d3;
+  --color-blue-icon: #83b3d3;
+  --color-dark-blue-icon: #68a2ca;
   --color-blue-icon-transparent: rgba(104, 162, 202, 0.3);
-  --color-green: rgb(125, 181, 79);
-  --color-dark-green: rgb(108, 158, 66);
-  --color-newsletter-green: rgb(153, 199, 165);
-  --color-hero-blue: rgb(145, 213, 245);
-  --color-catalog-blue: rgb(91, 156, 186);
+  --color-green: #7db54f;
+  --color-dark-green: #6c9e42;
+  --color-newsletter-green: #99c7a5;
+  --color-hero-blue: #91d5f5;
+  --color-catalog-blue: #5b9cba;
   --color-light-grey: rgba(131, 179, 211, 0.12);
   --color-grey: rgba(131, 179, 211, 0.2);
-  --color-card-border: rgb(230, 230, 230);
-  --color-select-border: rgb(229, 229, 229);
+  --color-card-border: #e6e6e6;
+  --color-select-border: #e5e5e5;
 }
 
 /*wrapper*/
@@ -1035,7 +1035,6 @@ body {
 .modal-form {
   display: flex;
   flex-direction: column;
-  /*row-gap: 22px;*/
 }
 
 .arrival-date-label,
@@ -1139,7 +1138,7 @@ body {
   border-radius: 0 4px 4px 0;
   border: none;
   cursor: pointer;
-  background-position: cente
+  background-position: center;
 }
 
 .visiting {
@@ -1156,7 +1155,6 @@ body {
 
 .quantity-field {
   width: 31px;
-  padding: 14px 5px;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -1613,6 +1611,7 @@ body {
   color: var(--color-dark-brown-text);
   border: 2px solid var(--color-select-border);
   border-radius: 4px;
+  background-color: var(--color-white);
   background-image: url("../images/catalog/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: center right 20px;
